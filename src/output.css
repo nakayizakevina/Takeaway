@@ -8694,6 +8694,18 @@ html:has(.drawer-open.drawer-open) {
   height: 15rem;
 }
 
+.h-\[\] {
+  height: ;
+}
+
+.h-\[100\] {
+  height: 100;
+}
+
+.h-\[100vh\] {
+  height: 100vh;
+}
+
 .w-24 {
   width: 6rem;
 }
@@ -8764,6 +8776,18 @@ html:has(.drawer-open.drawer-open) {
 
 .w-40 {
   width: 10rem;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.w-\[w\] {
+  width: w;
+}
+
+.w-\[100vw\] {
+  width: 100vw;
 }
 
 .flex-1 {
@@ -9811,6 +9835,11 @@ html:has(.drawer-open.drawer-open) {
   border-color: rgb(253 224 71 / var(--tw-border-opacity));
 }
 
+.border-red-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(185 28 28 / var(--tw-border-opacity));
+}
+
 .bg-\[\] {
   background-color: ;
 }
@@ -9888,6 +9917,28 @@ html:has(.drawer-open.drawer-open) {
 
 .bg-\[E5D4FF\] {
   background-color: E5D4FF;
+}
+
+.bg-\[\#F1\] {
+  background-color: #F1;
+}
+
+.bg-\[\#F1E\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 17 238 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#F1EA\] {
+  background-color: #F1EA;
+}
+
+.bg-inherit {
+  background-color: inherit;
+}
+
+.bg-blue-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
 
 .decoration-slice {
@@ -10031,6 +10082,11 @@ html:has(.drawer-open.drawer-open) {
   padding-right: 1.25rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -10095,6 +10151,11 @@ html:has(.drawer-open.drawer-open) {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold {
@@ -10409,6 +10470,12 @@ html:has(.drawer-open.drawer-open) {
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -10736,6 +10803,10 @@ html:has(.drawer-open.drawer-open) {
     margin-top: 0px;
   }
 
+  .md\:ml-40 {
+    margin-left: 10rem;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -10844,8 +10915,20 @@ html:has(.drawer-open.drawer-open) {
     width: 0.25rem;
   }
 
+  .md\:w-40 {
+    width: 10rem;
+  }
+
+  .md\:w-3 {
+    width: 0.75rem;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:grid-rows-2 {
@@ -10913,6 +10996,16 @@ html:has(.drawer-open.drawer-open) {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
