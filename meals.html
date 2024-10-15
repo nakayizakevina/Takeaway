@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>meals</title>
+    <link rel="icon" href="./img/favicon-48x48.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="./src/output.css">
 </head>
 <body>
     <main class="w-screen h-screen flex flex-col gap-4 bg-[#F1EAFF] overflow-y-auto" >
-        <div class="navbar">
+        <div class="navbar md:bg-white">
             <div class="flex-1">
               <img class="w-24 h-24 md:w-32 md:h-32 lg:w-36 lg:h-36" src="./img/cafelogo.png" alt="">
             </div>
-            <div class="flex-none gap-2">
+            <div class="flex-none gap-2 md:hidden">
               
               <div class="dropdown dropdown-end">
                 <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
@@ -33,11 +35,18 @@
                 </ul>
               </div>
             </div>
+
+            <ul class="hidden md:flex md:gap-16 md:text-xl md:cursor-pointer md:font-semibold md:mr-10">
+              <li class="hover:text-[#9680c0]"><a href="./index.html">Home</a></li>
+              <li class="hover:text-[#9680c0]"><a href="./menu.html">Menu</a></li>
+              <li class="hover:text-[#9680c0]"><a href="./location.html">Location</a></li>
+              <li class="hover:text-[#9680c0]"><a href="./feedback.html">Feedback</a></li>
+            </ul>
         </div>
         
         <div class="flex flex-col gap-4">
             <h1 class="font-semibold text-xl text-center md:text-2xl lg:text-3xl">Welcome To KCS</h1>
-            <p class="text-center text-lg md:text-xl lg:text-2xl">
+            <p class="text-center text-lg mx-4 md:text-xl lg:text-2xl">
                 Welcome to KCS delicious universe. Everything from our Big on Breakfast, Perfected Drinks, Decadent to your Generous Big Meals Right here at your fingertips.Make your order
             </p>
            

@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
+    <link rel="icon" href="./img/favicon-48x48.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="./src/output.css">
 </head>
 <body>
     <main class="w-screen h-auto flex flex-col gap-4 bg-[#F1EAFF]">
-        <nav class="navbar">
+        <nav class="navbar md:bg-white">
             <div class="flex-1">
               <img class="w-24 h-24 md:w-32 md:h-32 lg:w-36 lg:h-36" src="./img/cafelogo.png" alt="">
             </div>
             <div class="flex-none gap-2">
               
-              <div class="dropdown dropdown-end">
+              <div class="dropdown dropdown-end md:hidden">
                 <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
                    <svg class="w-[3em] h-[3em] md:w-[10em] md:h-[10em]"
                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -32,12 +34,18 @@
                   <li><a href="./feedback.html">Feedback</a></li>
                 </ul>
               </div>
+              <ul class="hidden md:flex md:gap-16 md:text-xl md:cursor-pointer md:font-semibold md:mr-10">
+              <li class="hover:text-[#9680c0]"><a href="./index.html">Home</a></li>
+              <li class="hover:text-[#9680c0]"><a href="./menu.html">Menu</a></li>
+              <li class="hover:text-[#9680c0]"><a href="./location.html">Location</a></li>
+              <li class="hover:text-[#9680c0]"><a href="./feedback.html">Feedback</a></li>
+            </ul>
             </div>
           </nav>
         
         <div class="flex flex-col gap-4">
             <h1 class="font-semibold text-xl text-center md:text-2xl lg:text-3xl">Welcome To KCS</h1>
-            <p class="text-center text-lg md:text-xl lg:text-2xl">
+            <p class="text-center text-lg mx-4 md:text-xl lg:text-2xl">
                 Welcome to KCS delicious universe. Everything from our Big on Breakfast, Perfected Drinks, Decadent to your Generous Big Meals Right here at your fingertips.Make your order
             </p>
            
@@ -59,6 +67,72 @@
                 <img class="w-full h-60 rounded-lg md:h-72" src="./img/Strawberry Cake.jpeg" alt="Strawberry Cake">
                 <a href="./desserts.html"><p class="text-center text-black md:text-xl lg:text-2xl">DECADENT DESSERTS</p></a>
             </div>
+        </section>
+        <section class="w-full h-auto bg-white">
+          <h1 class="font-semibold text-xl text-center mt-6 md:text-2xl lg:text-3xl"> Our top 5 signature dishes. </h1>
+          <div class="w-full h-auto flex flex-col gap-4 mt-4 md:grid md:grid-cols-2 lg:grid-cols-3">
+            <div class="card card-compact bg-[#E5D4FF]  shadow-xl w-[90%] h-auto m-auto flex flex-col gap-2 ">
+              <figure>
+                <img class="w-full h-60 rounded-lg md:h-72 md:w-62"
+                  src="./img/Traditional Thai Spring Rolls _ Marion's Kitchen.jpeg"
+                  alt="breakfast1"
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title text-center text-black md:text-xl lg:text-2xl">Spring Rolls</h2>
+                <p class="text-lg md:text-xl">Spring rolls are a popular appetizer or snack, consisting of a thin pastry wrapper filled with a variety of ingredients like vegetables, meat, or seafood. They can be either fried until crispy or served fresh with the filling wrapped in rice paper</p>
+              </div>
+            </div>
+            <div class="card card-compact bg-[#E5D4FF]  shadow-xl w-[90%] h-auto m-auto flex flex-col gap-2 ">
+              <figure>
+                <img class="w-full h-60 rounded-lg md:h-72 md:w-62"
+                  src="./img/Polish Mushroom Soup (Zupa Grzybowa) - Polish Feast.jpeg"
+                  alt="breakfast1"
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title text-center text-black md:text-xl lg:text-2xl">Polish Mushroom Soup</h2>
+                <p class="text-lg md:text-xl">The soup is often prepared with a rich broth made from meat or vegetable stock, onions, garlic, carrots, and sometimes potatoes. It is seasoned with herbs like bay leaves and allspice, and finished with a touch of cream or sour cream to add richness. </p>
+              </div>
+            </div>
+            <div class="card card-compact bg-[#E5D4FF]  shadow-xl w-[90%] h-auto m-auto flex flex-col gap-2 ">
+              <figure>
+                <img class="w-full h-60 rounded-lg md:h-72 md:w-62"
+                  src="./img/Bruschetta met scampi & avocado.jpeg"
+                  alt="Bruschetta"
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title text-center text-black md:text-xl lg:text-2xl">Bruschetta met scampi & avocado</h2>
+                <p class="text-lg md:text-xl">Bruschetta with Scampi & Avocado is a flavorful appetizer featuring crispy toasted bread topped with creamy mashed avocado and succulent, lemon-seasoned shrimp. Garnished with fresh herbs and a drizzle of olive oil.</p>
+              </div>
+            </div>
+            <div class="card card-compact bg-[#E5D4FF]  shadow-xl w-[90%] h-auto m-auto flex flex-col gap-2 ">
+              <figure>
+                <img class="w-full h-60 rounded-lg md:h-72 md:w-62"
+                  src="./img/10 Pretty Deviled Egg Recipes for Every Occasion.jpeg"
+                  alt="Deviled Eggs"
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title text-center text-black md:text-xl lg:text-2xl">Deviled Eggs</h2>
+                <p class="text-lg md:text-xl">Deviled eggs are a classic appetizer made from hard-boiled eggs, where the yolks are removed, mixed with ingredients like mayonnaise, mustard, vinegar, and spices, then spooned or piped back into the egg whites.  </p>
+              </div>
+            </div>
+            <div class="card card-compact bg-[#E5D4FF]  shadow-xl w-[90%] h-auto m-auto flex flex-col gap-2 ">
+              <figure>
+                <img class="w-full h-60 rounded-lg md:h-72 md:w-62"
+                  src="./img/Fruit Skewers.jpeg"
+                  alt="Fruit Skewers"
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title text-center text-black md:text-xl lg:text-2xl">Fruit Skewers</h2>
+                <p class="text-lg md:text-xl">Fruit skewers are a fun and refreshing snack or dessert made by threading a variety of fresh, bite-sized fruits onto skewers. Common fruits used include strawberries, grapes, pineapple, melon, and kiwi, but any fruit can be added.</p>
+              </div>
+            </div>
+          </div>
+          
         </section>
       </main>
 </body>
