@@ -14,6 +14,13 @@ module.exports = {
           "font-family": ["Roboto", "sans-serif"],
           "font-weight":"100",
           "font-style":"normal",
+        },
+
+        playfair:{
+        "font-family":["playfair Display", "serif"],
+         "font-optical-sizing": "auto",
+          "font-weight":"300",
+          "font-style": "normal",
         }
         
       

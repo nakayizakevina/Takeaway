@@ -3,14 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Menu</title>
+    <link rel="icon" href="./img/favicon-48x48.png" type="image/x-icon">
     <link rel="stylesheet" href="./src/output.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
-<body class="w-screen h-screen bg-cover bg-center md:flex flex-row-reverse" style="background-image: url(./img/bgcake.jpeg);">
-  <nav class="h-[80%] text-white  font-Roboto flex flex-col  justify-evenly md:w-1/2 md:h-full">
+<body class="w-screen h-screen bg-cover bg-center md:flex flex-row" style="background-image: url(./img/bgcake.jpeg);">
+  <div class="text-center mt-10 flex flex-col gap-10 md:w-1/2 md:mt-0 md:flex md:flex-col md:justify-center">
+    <h1 class="text-white font-semibold text-3xl font-playfair Display">Kevina's Cafe Shop</h1>
+    <p class="text-white text-xl"> We’re here to satisfy every craving. Come in, unwind, and enjoy the perfect blend of flavors any time of day.</p>
+
+    <!-- <button class="btn glass w-48 text-white font-semibold text-xl border border-white rounded-lg p-3 cursor-pointer md:ml-32 md:w-52 md:text-2x">Make your order</button> -->
+  </div>
+  
+  <section class="h-[80%] text-white  font-Roboto flex flex-col  justify-evenly md:w-1/2 md:h-full">
     <div class="flex justify-center">
       <img class="w-24 h-24  bg-slate-50 rounded-full md:w-32 md:h-32 lg:w-36 lg:h-36" src="./img/cafelogo.png" alt="">
     </div>
@@ -39,10 +47,8 @@
       </svg>
      <p class="text-xl md:text-3xl">Feedback</p>
     </a>
-  </nav>
-  <div class="text-center mt-10 md:w-1/2 md:mt-0 md:flex md:flex-col md:justify-center">
-    <button class="btn glass w-48 text-white font-semibold text-xl border border-white rounded-lg p-3 cursor-pointer md:ml-32 md:w-52 md:text-2x">Make your order</button>
-  </div>
+  </section>
+  
   
  
 </body>
