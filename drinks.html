@@ -4,46 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drinks</title>
-    <link rel="icon" href="./img/favicon-48x48.png" type="image/x-icon">
+    <link rel="icon" href="./img/logo.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="./src/output.css">
 </head>
 <body>
-    <main class="w-screen h-screen flex flex-col gap-4 bg-[#F1EAFF] overflow-y-auto">
-        <div class="navbar md:bg-white">
-            <div class="flex-1">
-              <img class="w-24 h-24 md:w-32 md:h-32 lg:w-36 lg:h-36" src="./img/cafelogo.png" alt="">
-            </div>
-            <div class="flex-none gap-2 md:hidden">
-              
-              <div class="dropdown dropdown-end">
-                <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-                   <svg class="w-[3em] h-[3em] md:w-[10em] md:h-[10em]"
-                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                     <path fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 8h12M6 12h12M6 16h12"/>
-                 </svg>
-                </div>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                  <li>
-                    <a href="./index.html">Home</a>
-                  </li>
-                  <li><a href="./menu.html">Menu</a></li>
-                  <li><a href="./feedback.html">Feedback</a></li>
-                </ul>
-              </div>
-            </div>
-            <ul class="hidden md:flex md:gap-16 md:text-xl md:cursor-pointer md:font-semibold md:mr-10">
-              <li class="hover:text-[#9680c0]"><a href="./index.html">Home</a></li>
-              <li class="hover:text-[#9680c0]"><a href="./menu.html">Menu</a></li>
-              <li class="hover:text-[#9680c0]"><a href="./feedback.html">Feedback</a></li>
-            </ul>
+    <main class="w-screen h-auto flex flex-col gap-4 bg-[#F1EAFF] overflow-y-auto">
+      <nav class="navbar md:bg-white flex justify-between">
+        <div>
+          <img
+            class="w-20 h-20"
+            src="./img/logo.png"
+            alt=""
+          />
         </div>
+        <div class="flex-none gap-2">
+          <div class="dropdown dropdown-end md:hidden">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-ghost btn-circle avatar"
+            >
+              <svg
+                class="w-[3em] h-[3em] md:w-[10em] md:h-[10em]"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="none"
+                  stroke="black"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 8h12M6 12h12M6 16h12"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li>
+                <a href="./index.html">Home</a>
+              </li>
+              <li><a href="./menu.html">Menu</a></li>
+              <li><a href="./gallery.html">Gallery</a></li>
+              <li><a href="./reservations.html">Reservations</a></li>
+              <li><a href="./feedback.html">Feedback</a></li>
+            </ul>
+          </div>
+          <ul
+            class="hidden md:flex md:gap-16 md:text-xl md:cursor-pointer md:font-semibold md:mr-10"
+          >
+            <li class="hover:text-[#9680c0] hover:text-lg hover:font-normal"><a href="./index.html">Home</a></li>
+            <li class="hover:text-[#9680c0] hover:text-lg hover:font-normal"><a href="./menu.html">Menu</a></li>
+            <li class="hover:text-[#9680c0] hover:text-lg hover:font-normal"><a href="./gallery.html">Gallery</a></li>
+            <li class="hover:text-[#9680c0] hover:text-lg hover:font-normal"><a href="./reservations.html">Reservations</a></li>
+            <li class="hover:text-[#9680c0] hover:text-lg hover:font-normal"><a href="./feedback.html">Feedback</a></li>
+          </ul>
+        </div>
+      </nav>
         
         <div class="flex flex-col gap-4">
-            <h1 class="font-semibold text-xl text-center md:text-2xl lg:text-3xl">Welcome To KCS</h1>
-            <p class="text-center text-lg mx-4 md:text-xl lg:text-2xl">
+            <h1 class="font-semibold text-xl text-center font-poppins md:text-2xl lg:text-3xl">Welcome To KCS</h1>
+            <p class="text-center text-lg mx-4 font-poppins md:text-xl lg:text-2xl">
                 Welcome to KCS delicious universe. Everything from our Big on Breakfast, Perfected Drinks, Decadent to your Generous Big Meals Right here at your fingertips.Make your order
             </p>
            
@@ -57,8 +81,8 @@
                   />
                 </figure>
                 <div class="card-body">
-                  <h2 class="card-title text-center text-black md:text-xl lg:text-2xl">Pinapple Smoothy<span>$20</span></h2>
-                  <p class="text-lg md:text-xl">Start your day with a hearty English breakfast, featuring eggs, bacon, sausages, grilled tomatoes, baked beans, and toast. Perfect for fueling your day!</p>
+                  <h2 class="card-title font-poppins text-center text-black  md:text-xl lg:text-2xl">Pinapple Smoothy<span>$20</span></h2>
+                  <p class="text-lg font-poppins md:text-xl">Start your day with a hearty English breakfast, featuring eggs, bacon, sausages, grilled tomatoes, baked beans, and toast. Perfect for fueling your day!</p>
                  
                   <div class="flex justify-end">
                     <button class="btn w-48 text-black text-sm bg-[#F1EAFF] rounded-lg p-2 cursor-pointer md:ml-40 md:w-32 md:text-sm " onclick="my_modal_5.showModal()">Make Order</button>
@@ -66,7 +90,7 @@
                    
                    
                      <dialog id="my_modal_5" class="modal">
-                      <div class="modal-box">
+                      <div class="modal-box font-poppins">
                         <h3 class="text-lg font-bold">Hello!</h3>
                         <p class="py-4">Thank you for trusting us, your order as been received</p>
                         <div class="modal-action">
@@ -91,7 +115,7 @@
                   />
                 </figure>
                 <div class="card-body">
-                  <h2 class="card-title text-center text-black md:text-xl lg:text-2xl">Aperol Spritz<span>$20</span></h2>
+                  <h2 class="card-title font-poppins text-center text-black md:text-xl lg:text-2xl">Aperol Spritz<span>$20</span></h2>
                   <p class="text-lg md:text-xl">Start your day with a hearty English breakfast, featuring eggs, bacon, sausages, grilled tomatoes, baked beans, and toast. Perfect for fueling your day!</p>
                 
                   <div class="flex justify-end">
@@ -125,7 +149,7 @@
                   />
                 </figure>
                 <div class="card-body">
-                  <h2 class="card-title text-center text-black md:text-xl lg:text-2xl">Slushie Recipe<span>$20</span></h2>
+                  <h2 class="card-title font-poppins text-center text-black md:text-xl lg:text-2xl">Slushie Recipe<span>$20</span></h2>
                   <p class="text-lg md:text-xl">Start your day with a hearty English breakfast, featuring eggs, bacon, sausages, grilled tomatoes, baked beans, and toast. Perfect for fueling your day!</p>
                 
                   <div class="flex justify-end">
@@ -159,7 +183,7 @@
                   />
                 </figure>
                 <div class="card-body">
-                  <h2 class="card-title text-center text-black md:text-xl lg:text-2xl">Cantaloupe Agua Fresca<span>$20</span></h2>
+                  <h2 class="card-title font-poppins text-center text-black md:text-xl lg:text-2xl">Cantaloupe Agua Fresca<span>$20</span></h2>
                   <p class="text-lg md:text-xl">Start your day with a hearty English breakfast, featuring eggs, bacon, sausages, grilled tomatoes, baked beans, and toast. Perfect for fueling your day!</p>
 
 
@@ -194,7 +218,7 @@
                   />
                 </figure>
                 <div class="card-body">
-                  <h2 class="card-title text-center text-black md:text-xl lg:text-2xl">Caramel Iced Coffee<span>$20</span></h2>
+                  <h2 class="card-title font-poppins text-center text-black md:text-xl lg:text-2xl">Caramel Iced Coffee<span>$20</span></h2>
                   <p class="text-lg md:text-xl">Start your day with a hearty English breakfast, featuring eggs, bacon, sausages, grilled tomatoes, baked beans, and toast. Perfect for fueling your day!</p>
                   
                   <div class="flex justify-end">
@@ -228,7 +252,7 @@
                   />
                 </figure>
                 <div class="card-body">
-                  <h2 class="card-title text-center text-black md:text-xl lg:text-2xl">Mojito<span>$20</span></h2>
+                  <h2 class="card-title font-poppins text-center text-black md:text-xl lg:text-2xl">Mojito<span>$20</span></h2>
                   <p class="text-lg md:text-xl">Start your day with a hearty English breakfast, featuring eggs, bacon, sausages, grilled tomatoes, baked beans, and toast. Perfect for fueling your day!</p>
                   
                   <div class="flex justify-end">
@@ -262,7 +286,7 @@
                   />
                 </figure>
                 <div class="card-body">
-                  <h2 class="card-title text-center text-black md:text-xl lg:text-2xl">Old Fashioned Lemonade<span>$20</span></h2>
+                  <h2 class="card-title font-poppins text-center text-black md:text-xl lg:text-2xl">Old Fashioned Lemonade<span>$20</span></h2>
                   <p class="text-lg md:text-xl">Start your day with a hearty English breakfast, featuring eggs, bacon, sausages, grilled tomatoes, baked beans, and toast. Perfect for fueling your day!</p>
                  
                   <div class="flex justify-end">
@@ -297,7 +321,7 @@
                   />
                 </figure>
                 <div class="card-body">
-                  <h2 class="card-title text-center text-black md:text-xl lg:text-2xl">Red Moon Cocktail<span>$20</span></h2>
+                  <h2 class="card-title font-poppins text-center text-black md:text-xl lg:text-2xl">Red Moon Cocktail<span>$20</span></h2>
                   <p class="text-lg md:text-xl">Start your day with a hearty English breakfast, featuring eggs, bacon, sausages, grilled tomatoes, baked beans, and toast. Perfect for fueling your day!</p>
                   <!-- Open the modal using ID.showModal() method -->
                    <div class="flex justify-end">

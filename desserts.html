@@ -4,42 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>desserts</title>
-    <link rel="icon" href="./img/favicon-48x48.png" type="image/x-icon">
+    <link rel="icon" href="./img/logo.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="./src/output.css">
 </head>
 <body>
-    <main class="w-screen h-screen flex flex-col gap-4 bg-[#F1EAFF] overflow-y-auto">
-        <div class="navbar md:bg-white">
-            <div class="flex-1">
-              <img class="w-24 h-24 md:w-32 md:h-32 lg:w-36 lg:h-36" src="./img/cafelogo.png" alt="">
-            </div>
-            <div class="flex-none gap-2 md:hidden">
-              
-              <div class="dropdown dropdown-end">
-                <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-                   <svg class="w-[3em] h-[3em] md:w-[10em] md:h-[10em]"
-                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                     <path fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 8h12M6 12h12M6 16h12"/>
-                 </svg>
-                </div>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                  <li>
-                    <a href="./index.html">Home</a>
-                  </li>
-                  <li><a href="./menu.html">Menu</a></li>
-                  <li><a href="./feedback.html">Feedback</a></li>
-                </ul>
-              </div>
-            </div>
-            <ul class="hidden md:flex md:gap-16 md:text-xl md:cursor-pointer md:font-semibold md:mr-10">
-              <li class="hover:text-[#9680c0]"><a href="./index.html">Home</a></li>
-              <li class="hover:text-[#9680c0]"><a href="./menu.html">Menu</a></li>
-              <li class="hover:text-[#9680c0]"><a href="./feedback.html">Feedback</a></li>
-            </ul>
+    <main class="w-screen h-auto flex flex-col gap-4 bg-[#F1EAFF] overflow-y-auto">
+      <nav class="navbar md:bg-white flex justify-between">
+        <div>
+          <img
+            class="w-20 h-20"
+            src="./img/logo.png"
+            alt=""
+          />
         </div>
+        <div class="flex-none gap-2">
+          <div class="dropdown dropdown-end md:hidden">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-ghost btn-circle avatar"
+            >
+              <svg
+                class="w-[3em] h-[3em] md:w-[10em] md:h-[10em]"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="none"
+                  stroke="black"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 8h12M6 12h12M6 16h12"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li>
+                <a href="./index.html">Home</a>
+              </li>
+              <li><a href="./menu.html">Menu</a></li>
+              <li><a href="./gallery.html">Gallery</a></li>
+              <li><a href="./reservations.html">Reservations</a></li>
+              <li><a href="./feedback.html">Feedback</a></li>
+            </ul>
+          </div>
+          <ul
+            class="hidden md:flex md:gap-16 md:text-xl md:cursor-pointer md:font-semibold md:mr-10"
+          >
+            <li class="hover:text-[#9680c0] hover:text-lg hover:font-normal"><a href="./index.html">Home</a></li>
+            <li class="hover:text-[#9680c0] hover:text-lg hover:font-normal"><a href="./menu.html">Menu</a></li>
+            <li class="hover:text-[#9680c0] hover:text-lg hover:font-normal"><a href="./gallery.html">Gallery</a></li>
+            <li class="hover:text-[#9680c0] hover:text-lg hover:font-normal"><a href="./reservations.html">Reservations</a></li>
+            <li class="hover:text-[#9680c0] hover:text-lg hover:font-normal"><a href="./feedback.html">Feedback</a></li>
+          </ul>
+        </div>
+      </nav>
         
         <div class="flex flex-col gap-4">
             <h1 class="font-semibold text-xl text-center md:text-2xl lg:text-3xl">Welcome To KCS</h1>
