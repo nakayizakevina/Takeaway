@@ -8480,6 +8480,10 @@ html:has(.drawer-open.drawer-open){
   top: 0.5rem;
 }
 
+.top-0{
+  top: 0px;
+}
+
 .isolate{
   isolation: isolate;
 }
@@ -9786,6 +9790,16 @@ html:has(.drawer-open.drawer-open){
   border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
 
+.border-red-600{
+  --tw-border-opacity: 1;
+  border-color: rgb(220 38 38 / var(--tw-border-opacity));
+}
+
+.border-base-300{
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-b3,oklch(var(--b3)/var(--tw-border-opacity)));
+}
+
 .bg-\[\#E5D4FF\]{
   --tw-bg-opacity: 1;
   background-color: rgb(229 212 255 / var(--tw-bg-opacity));
@@ -9809,6 +9823,11 @@ html:has(.drawer-open.drawer-open){
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-base-200{
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity)));
 }
 
 .decoration-slice{
@@ -9904,6 +9923,10 @@ html:has(.drawer-open.drawer-open){
   background-origin: content-box;
 }
 
+.fill-current{
+  fill: currentColor;
+}
+
 .object-contain{
   -o-object-fit: contain;
      object-fit: contain;
@@ -9937,6 +9960,10 @@ html:has(.drawer-open.drawer-open){
   padding: 0.75rem;
 }
 
+.p-10{
+  padding: 2.5rem;
+}
+
 .px-1{
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -9955,6 +9982,11 @@ html:has(.drawer-open.drawer-open){
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .text-left{
@@ -10143,6 +10175,11 @@ html:has(.drawer-open.drawer-open){
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-base-content{
+  --tw-text-opacity: 1;
+  color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity)));
 }
 
 .underline{
@@ -10675,6 +10712,14 @@ html:has(.drawer-open.drawer-open){
 }
 
 @media (min-width: 768px){
+  .md\:sticky{
+    position: sticky;
+  }
+
+  .md\:top-0{
+    top: 0px;
+  }
+
   .md\:ml-0{
     margin-left: 0px;
   }
@@ -10935,6 +10980,10 @@ html:has(.drawer-open.drawer-open){
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .md\:flex-row{
     flex-direction: row;
   }
@@ -10961,6 +11010,14 @@ html:has(.drawer-open.drawer-open){
 
   .md\:gap-3{
     gap: 0.75rem;
+  }
+
+  .md\:place-self-center{
+    place-self: center;
+  }
+
+  .md\:justify-self-end{
+    justify-self: end;
   }
 
   .md\:bg-white{
